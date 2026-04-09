@@ -6,6 +6,7 @@ import { IoPersonAddSharp } from "react-icons/io5";
 import { RxAvatar } from "react-icons/rx";
 import { useSelector, useDispatch } from "react-redux";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 import {  toast } from "react-toastify";
 
 const Search = () => {
