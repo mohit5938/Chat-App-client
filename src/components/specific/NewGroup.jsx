@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Avatar, AvatarImage } from '@/components/ui/avatar';
-import { Button } from '@/components/ui/Button';
+import { Avatar, AvatarImage } from '@/components/ui/Avatar';
+
 import { useMyAvailableFriendsQuery } from '@/redux/api/api.js'
-import { setIsNewGroup } from '@/redux/reducers/misc.js'
+
 import axios from "axios";
  import { useDispatch ,useSelector} from 'react-redux';
 import {server} from '../constants/config.js'
@@ -13,12 +13,6 @@ import { toast } from 'react-toastify';
 const NewGroup = () => {
 
   const {isError , isLoading , data , error} = useMyAvailableFriendsQuery();
-  console.log(data)
-const dispath = useDispatch();
-const navigate = useNavigate();
-  const { isNewGroup } = useSelector(state => state.misc)
-
- 
   const [members , setMembers] = useState([])
   const [groupName , setGroupName] = useState("");
   const [selectedMembers , setSelectedMembers] = useState([]);
