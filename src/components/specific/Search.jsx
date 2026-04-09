@@ -1,5 +1,4 @@
 import React from 'react'
-import {Button} from "@/components/ui/button.jsx"
 import { useState, useEffect, useRef } from 'react'
 import { IoMdAddCircle } from "react-icons/io";
 import { useLazySearchUserQuery ,useSendFriendRequestMutation } from "@/redux/api/api";
