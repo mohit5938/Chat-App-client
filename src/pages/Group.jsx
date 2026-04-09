@@ -3,7 +3,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { useParams } from 'react-router-dom';
 import { CiCircleRemove } from "react-icons/ci";
 import { MdGroupAdd } from "react-icons/md";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button.jsx";
 import { Pencil, Check } from "lucide-react";
 import {useNavigate} from 'react-router-dom';
 import { toast } from "react-toastify";
