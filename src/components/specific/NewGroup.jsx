@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Avatar, AvatarImage } from '@/components/ui/Avatar';
+
 
 import { useMyAvailableFriendsQuery } from '@/redux/api/api.js'
 
